@@ -2,7 +2,7 @@
     "name": "contactamx/sms",
     "description": "Send transactional sms",
     "type": "library",
-    "license": "Apache MIT 2.0",
+    "license": "proprietary",
     "autoload": {
         "psr-4": {
             "Contactamx\\Sms\\": "src/"
