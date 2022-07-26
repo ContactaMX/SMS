@@ -6,7 +6,7 @@ class Response {
 
     public $error = false;
     public $success = true;
-    // public $data = [];
+    public $message = '';
 
     public $id = null;
     public $country = null;

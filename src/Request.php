@@ -166,7 +166,7 @@ class Request
 
             $response->error = true;
             $response->success = false;
-            $response->description = json_decode($err);
+            $response->message = json_decode($err);
 
             $this->response = $response;
             return $this->response;
@@ -176,9 +176,10 @@ class Request
 
             $response->error = $json->error;
             $response->success = $json->status;
-            // $response->data = $json->description;
+            $response->message = $json->description;
 
             if ($json->status) {
+                $response->message = "message sent successfully";
                 $response->id = $json->description->id;
                 $response->country = $json->description->country;
                 $response->charge = $json->description->charge;
