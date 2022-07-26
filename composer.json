@@ -1,0 +1,24 @@
+{
+    "name": "contactamx/sms",
+    "description": "Send transactional sms",
+    "type": "library",
+    "license": "Apache MIT 2.0",
+    "autoload": {
+        "psr-4": {
+            "Contactamx\\Sms\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Desarrollo",
+            "email": "desarrollo@contacta.mx"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
